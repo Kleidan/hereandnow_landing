@@ -1,0 +1,87 @@
+@use './library/colors' as *;
+@use './library/font' as *;
+@use './library/sizes' as *;
+@use './library/mixin' as *;
+@forward 'util';
+
+body {
+  font-family: $ff-primary;
+  color: $primary-clr;
+  font-size: $fs-reg;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+h1 {
+  font-family: $ff-heading;
+  font-size: $fs-xxl;
+  text-shadow: $shadow-clr 0 0 3rem;
+}
+
+h2 {
+  font-size: $fs-lg;
+}
+
+main {
+  background-image: linear-gradient(to bottom, $from-clr, $to-clr);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+main {
+  @include flex_item (column, center, center);
+  padding-inline: $sp-sm;
+}
+
+p,
+label {
+  color: $secondary-clr;
+}
+
+.form-control {
+  @include flex_item (row, center, flex-end);
+  text-align: start;
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    max-height: 100%;
+  }
+
+  .form-control {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
+
+input {
+  background-color: $input-clr;
+  border: 2px solid $primary-clr;
+  font-size: $fs-md;
+  max-width: 100%;
+  padding: 2px 1px;
+}
+
+#mail {
+  direction: ltr;
+}
+
+button {
+  background-color: $primary-clr;
+  border: none;
+  padding: .65rem 4rem;
+  transition: scale 1s ease-in-out;
+  font-size: $fs-reg;
+}
+
+button:hover {
+  background-color: #e6e6e6;
+  scale: 1.025;
+}
