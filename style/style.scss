@@ -12,8 +12,6 @@ body {
   word-wrap: break-word;
 }
 
-body {}
-
 h1 {
   font-family: $ff-heading;
   font-size: $fs-xxl;
@@ -26,7 +24,8 @@ h2 {
 
 main {
   min-height: 100%;
-  width: 100% background-image: linear-gradient(to bottom, $from-clr, $to-clr);
+  width: 100%;
+  background-image: linear-gradient(to bottom, $from-clr, $to-clr);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
