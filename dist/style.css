@@ -12,6 +12,7 @@ html {
 
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -20,6 +21,14 @@ body {
   font-size: 1rem;
   text-align: center;
   word-wrap: break-word;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #281EFF, #2DFF8C);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -33,11 +42,8 @@ h2 {
 }
 
 main {
-  height: 100%;
-  background-image: linear-gradient(to bottom, #281EFF, #2DFF8C);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 100%;
+  width: 100%;
 }
 
 main {

@@ -12,12 +12,7 @@ body {
   word-wrap: break-word;
 }
 
-// body {
-//   background-image: linear-gradient(to bottom, $from-clr, $to-clr);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-// }
+body {}
 
 h1 {
   font-family: $ff-heading;
@@ -30,11 +25,12 @@ h2 {
 }
 
 main {
-  height: 100%;
-  background-image: linear-gradient(to bottom, $from-clr, $to-clr);
+  min-height: 100%;
+  width: 100% background-image: linear-gradient(to bottom, $from-clr, $to-clr);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed
 }
 
 main {
@@ -53,9 +49,6 @@ label {
 }
 
 @media screen and (max-width: 850px) {
-  body {
-    height: 100%;
-  }
 
   .form-control {
     flex-direction: column;
