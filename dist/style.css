@@ -50,6 +50,7 @@ main {
   align-items: center;
   gap: 2rem;
   padding-inline: 1rem;
+  padding-bottom: 1rem;
 }
 
 p,

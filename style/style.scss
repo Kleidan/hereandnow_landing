@@ -35,6 +35,7 @@ main {
 main {
   @include flex_item (column, center, center);
   padding-inline: $sp-sm;
+  padding-bottom: $sp-sm;
 }
 
 p,
